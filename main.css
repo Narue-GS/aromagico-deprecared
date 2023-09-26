@@ -1,0 +1,103 @@
+
+
+
+
+* {
+  padding: 0;
+  margin:0;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
+  box-sizing: border-box;
+  --dark: #391559;
+  --datail: #a34cff;
+}
+
+body {
+  padding-top: 5em;
+  background-color: var(--dark);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  padding: 1em;
+  box-shadow: 0px 1px 10px rgba(255, 255, 255, 0.373);
+  background-color: rgba(0,0,0,0.2);
+  width: 100%;
+}
+
+header > h1 {
+  color: var(--datail);
+  text-shadow: 1px 1px 5px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+.banner {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  background-image: url('./img/banner-image.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:500px;
+  height: 80vh;
+  background-attachment: fixed;
+}
+
+.banner > h1 {
+  color: white;
+  letter-spacing: 0.2em;
+  text-shadow: 1px 1px 0.1em white;
+
+  font-size: 7em;
+  margin-bottom: 0.2em;
+  z-index: 1;
+}
+
+.banner > span {
+  color: #a34cff;
+  letter-spacing: 0.1em;
+  z-index: 1;
+  padding: 0.5em 3em;
+  width: fit-content;
+  background-color: rgba(0, 0, 0, 0.682);
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+.banner > .shadow {
+  width: 100%;
+  z-index: 0;
+  position: absolute;
+  height: 80vh;
+  background-color: rgba(0,0,0,0.5)
+}
+
+.post-list {
+  display: flex;
+  background-color: white;
+  place-items: center;
+  flex-direction: column;
+  padding: 2em 0;
+}
+
+.post {
+  width: 80%;
+  border: solid 1px black;
+  padding: 2em;
+  border-radius: 5px;
+  color: white;
+  background-color: var(--dark);
+  height: 400px;
+  overflow: scroll;
+}
+
+.post > span {
+  margin-top: 5em;
+  word-spacing: 0.1em;
+}
+
+.post > .post-header {
+  height: 80%;
+}
