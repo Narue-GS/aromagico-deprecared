@@ -50,8 +50,7 @@ header > h1 {
   color: white;
   letter-spacing: 0.2em;
   text-shadow: 1px 1px 0.1em white;
-
-  font-size: 7em;
+  font-size: 10vw;
   margin-bottom: 0.2em;
   z-index: 1;
 }
@@ -86,18 +85,31 @@ header > h1 {
   width: 80%;
   border: solid 1px black;
   padding: 2em;
+  display: flex;
+  flex-direction: column;
   border-radius: 5px;
   color: white;
   background-color: var(--dark);
   height: 400px;
-  overflow: scroll;
 }
 
 .post > span {
-  margin-top: 5em;
+  margin-top: 2em;
   word-spacing: 0.1em;
+  overflow: scroll;
 }
 
 .post > .post-header {
-  height: 80%;
+  height: 200px;  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media screen  and (max-width:400px){
+  
+.banner > h1 {
+  font-size: 12vw;
+  margin-bottom: 0.2em;
+}
 }
