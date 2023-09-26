@@ -16,21 +16,29 @@
   
   <title>Document</title>
 </head>
+<script>
+  window.addEventListener('scroll', () => {
+    let y = window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
+    document.body.style.setProperty('--scroll', y);
+  }, false);
+</script>
 <body>
   <header>
     <h1>Aromágico</h1>
   </header>
   <section class="banner">
     <div class="shadow"></div>
-    <h1>Aromágico</h1>
-    <span>um blog sobre café, escrito por um ansioso</span>
+    <div class="banner-content">
+      <h1>Aromágico</h1>
+      <span>um blog sobre café, escrito por um ansioso</span>
+    </div>
   </section>
 
   <hr>
 
   <section class="post-list">
     <div class="post">
-      <div style="background-image: url('./img/post1-image.png'); background-position: 0 45%;" class="post-header"></div>
+      <div style="background-image: url('./img/post1-image.png');" class="post-header"></div>
       <span class="post-content">
         Muito bem vinde a todes! Esse é meu blog sobre café e, já esclarescendo uma possível dúvida, 
         sim, café me faz <strong>muito</strong> mal. Mas acho que a vida é um pouco sobre isso, equilibrar o que te mata
@@ -41,19 +49,14 @@
       <span class="post-date">26/09/2023</span>
     </div>
     <div class="post">
-      <div style="background-image: url('./img/post-image.jpg'); background-position: 0 45%;" class="post-header"></div>
+      <div style="background-image: url('./img/post-image.jpg');" class="post-header"></div>
       <span class="post-content">
         Opa, bon jour! eu decidi criar esse blog na base do ódio. Por uma série de motivos como o fato de que
         eu <strong>óbviamente</strong> não sou bom com delongas, mas eu me senti desafiado. O indivíduo que me desafiou,
         o professor de uma conhecida, o fez sem sequer saber. Como muitos professores, especialmente os de diciplinas 
         conectadas com TI, ele se importa muito pouco com o ensino e muito com o próprio ego, se esforçando pra fazer a mais simples
         das tarefas parecerem o que eu chamo de "repinbócas da parafuseta". Um professor que complica não é um professor, ponto.
-        Me revolta que alguém seja tão bem pago só pra jogar o seu ogo sobre aqueles que só querem aprender.Opa, bon jour! eu decidi criar esse blog na base do ódio. Por uma série de motivos como o fato de que
-        eu <strong>óbviamente</strong> não sou bom com delongas, mas eu me senti desafiado. O indivíduo que me desafiou,
-        o professor de uma conhecida, o fez sem sequer saber. Como muitos professores, especialmente os de diciplinas 
-        conectadas com TI, ele se importa muito pouco com o ensino e muito com o próprio ego, se esforçando pra fazer a mais simples
-        das tarefas parecerem o que eu chamo de "repinbócas da parafuseta". Um professor que complica não é um professor, ponto.
-        Me revolta que alguém seja tão bem pago só pra jogar o seu ogo sobre aqueles que só querem aprender.
+        Me revolta que alguém seja tão bem pago só pra jogar o seu ego sobre aqueles que só querem aprender.
       </span><br/>
       <span class="post-date">26/09/2023</span>
     </div>
