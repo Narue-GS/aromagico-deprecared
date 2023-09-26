@@ -28,8 +28,8 @@ header {
 }
 
 header > h1 {
-  color: var(--datail);
-  text-shadow: 1px 1px 5px red, 0 0 1em blue, 0 0 0.2em blue;
+  color: white;
+  font-size: 2vw;
 }
 
 .banner {
@@ -41,7 +41,7 @@ header > h1 {
   background-image: url('./img/banner-image.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size:500px;
+  background-size:550px;
   height: 80vh;
   background-attachment: fixed;
 }
@@ -56,13 +56,13 @@ header > h1 {
 }
 
 .banner > span {
-  color: #a34cff;
+  color: #00ff2f;
   letter-spacing: 0.1em;
   z-index: 1;
   padding: 0.5em 3em;
   width: fit-content;
   background-color: rgba(0, 0, 0, 0.682);
-  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+  text-shadow: 0 0 1em white;
 }
 
 .banner > .shadow {
@@ -75,6 +75,7 @@ header > h1 {
 
 .post-list {
   display: flex;
+  gap: 1em;
   background-color: white;
   place-items: center;
   flex-direction: column;
@@ -93,10 +94,15 @@ header > h1 {
   height: 400px;
 }
 
-.post > span {
+.post > .post-content {
   margin-top: 2em;
   word-spacing: 0.1em;
   overflow: scroll;
+  max-height: 100px;
+}
+
+.post > .post-date {
+  color: rgba(255, 255, 255, 0.542);
 }
 
 .post > .post-header {
@@ -107,9 +113,15 @@ header > h1 {
 }
 
 @media screen  and (max-width:400px){
-  
-.banner > h1 {
-  font-size: 12vw;
-  margin-bottom: 0.2em;
-}
+  .banner > h1 {
+    font-size: 12vw;
+    margin-bottom: 0.2em;
+  }
+  body {
+    padding-top: 4em;
+  }
+  header > h1 {
+    text-align: center;
+    font-size: 1em;
+  }
 }
