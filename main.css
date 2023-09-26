@@ -146,7 +146,7 @@ header > h1 {
   
 }
 
-@media screen  and (max-width:500px){
+@media screen  and (max-width:600px){
   .banner {
     background-position: top;
   }
