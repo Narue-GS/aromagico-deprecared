@@ -99,7 +99,6 @@ header > h1 {
 
 .post {
   width: 80%;
-  border: solid 1px black;
   padding: 2em;
   display: flex;
   flex-direction: column;
@@ -127,6 +126,7 @@ header > h1 {
 .post > .post-header {
   height: 200px;  
   width: 100%;
+  border-radius: 5px;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
